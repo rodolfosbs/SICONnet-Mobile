@@ -1,0 +1,37 @@
+/* estilos de cor */
+
+.sidebar-custom ul li.active a:hover {
+  background: #796AEE;
+}
+
+.nav navbar-nav ul li a:hover {
+  background: #796AEE;
+}
+
+.navbar-cor-pro {
+  	background-color: #3E7FA3;
+	border-color: #e7e7e7;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+ 	color: #ffffff !important;
+}
+
+.navbar-cor-hom {
+  	background-color: #3E7FA3;
+	border-color: #e7e7e7;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+ 	color: #ffffff !important;
+}
+
+.navbar-cor-qua {
+  	background-color: #3E7FA3;
+	border-color: #e7e7e7;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+ 	color: #ffffff !important;
+}
+
+.navbar-cor-dev {
+  	background-color: #3E7FA3;
+	border-color: #e7e7e7;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+ 	color: #ffffff !important;
+}
