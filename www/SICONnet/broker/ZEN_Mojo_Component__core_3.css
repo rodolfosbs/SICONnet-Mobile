@@ -1,0 +1,325 @@
+/* @class="%ZEN.Mojo.Component.documentView" */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/* enclosing div */
+.dvEnclosingClass {
+	position: relative;
+	overflow: hidden;
+	background: none;
+	border: 1px solid rgba(200,200,200,0.5);
+}
+
+/* frame for panels */
+.dvFrame {
+	position: relative;
+	overflow: hidden;
+	background: none;
+	border-right: 1px solid #808080;
+}
+
+/* content panel within frame */
+.dvPanel {
+	overflow: auto;
+	position: absolute;
+	top: 0px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.dvPanel:hover {
+	overflow: auto;
+}
+
+/* wrapper of content within dvPanel */
+.dvInnerPanel {
+}
+
+/* outermost div for document */
+.dvDocument {
+}
+
+.dvCanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	display: none;
+}
+
+.dvEnclosingClass iframe {
+	position: absolute;
+	border: none;
+	top: 0px;
+	left: 0px;
+}
+
+.dvTooltip {
+	position: absolute;
+	z-index: 10;
+	min-height: 20px;
+	min-width: 20px;
+	border-radius: 5px;
+	border: 1px solid #D8D4AC;
+	box-shadow: 2px 2px 2px black;
+	padding: 5px;
+
+	overflow: hidden;
+	background: white;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #F6F6F6 47%, #EDEDED 100%);
+}
+
+.dvBody {
+	color: #575757;
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.0;
+
+	transition-property: opacity;
+	transition-duration: 0.75s;
+	transition-timing-function: ease;
+}
+
+.dvBlock {
+}
+
+.dvCellInner {
+	overflow: hidden;
+}
+
+.dvGenericTitle {
+	padding-top: 10px;
+	color: #606060;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.dvGenericValue {
+	color: #404040;
+	font-size: 20px;
+	font-family: courier new;
+}
+
+div:focus {
+    outline-color: #9ECAED;
+}
+
+ol.dvCtrlRadioList {
+	padding: 0px;
+	margin: 0px;
+}
+
+ol.dvCtrlRadioList li {
+	list-style: none;
+	float: left;
+}
+
+.dvCtrlRadio {
+}
+
+.dvCtrlRadioCaption {
+	color: #404040;
+	font-size: 14px;
+	padding-left: 3px;
+	padding-right: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dvCtrlRadioCaption:hover {
+	color: darkred;
+}
+.dvCtrlRadioCaption:active {
+	/*text-shadow: 1px 1px 8px #808080, -1px -1px 8px #808080;*/
+}
+
+.dvCtrlText {
+}
+
+.dvCtrlCheckbox {
+}
+
+.dvLookupTable {
+}
+
+img.dvLookupImage {
+	vertical-align: middle;
+	height: 18px;
+	padding-left: 2px;
+	cursor: pointer;
+
+	opacity: 0.6;
+	transition-property: opacity;
+	transition-duration: 0.75s;
+	transition-timing-function: ease;
+}
+
+img.dvLookupImage:hover {
+	opacity: 1.0;
+}
+
+img.dvLookupImage:active {
+	background: rgba(120,120,120,0.3);
+	box-shadow: 0px 0px 10px rgb(120,120,120);
+}
+
+.dvCtrlLink {
+	color: #404040;
+}
+
+.dvCtrlLink:hover {
+	color: #804040;
+}
+
+.dvCtrlLink:active {
+	text-shadow: 1px 1px 8px #808080, -1px -1px 8px #808080;
+}
+
+.dvCtrlLink img {
+	opacity: 0.8;
+}
+
+.dvCtrlLink:hover img {
+	opacity: 1.0;
+}
+
+.dvCtrlLink:active img {
+	background: white;
+}
+
+/* choice button */
+.dvCtrlChoice,
+.dvCtrlChoiceSelected,
+.dvCtrlChoiceDisabled,
+.dvCtrlChoiceSelectedDisabled {
+	white-space: nowrap;
+	position: absolute;
+	height: 16px;
+	color: #808080;
+	font-size: 10px;
+	font-weight: bold;
+	padding-top: 2px;
+	text-align: center;
+	overflow: hidden;
+
+	background: #F5F6F6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dvCtrlChoice,
+.dvCtrlChoiceSelected {
+	color: #404040;
+	background: #F5F6F6;
+	background: linear-gradient(to bottom,  #F5F6F6 0%, #DBDCE2 21%, #B8BAC6 49%, #DDDFE3 80%, #F5F6F6 100%);
+
+	transition-property: background;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+
+.dvCtrlChoiceSelected,.dvCtrlChoiceSelectedDisabled {
+	background: rgb(53,107,141);
+	color: white;
+}
+
+.dvCtrlChoice:hover {
+	background: #FFEEAA;
+}
+
+.dvCtrlChoiceSelected:hover {
+	background: rgb(73,127,161);
+	color: white;
+}
+
+img.dvDiscIcon {
+	height: 20px;
+	opacity: 0.5;
+}
+
+img.dvDiscIcon:hover {
+	height: 20px;
+	opacity: 1.0;
+}
+
+img.dvDiscIcon:active {
+	border-radius: 10px;
+	background: rgba(200,200,250,0.5);
+	box-shadow: 2px 2px 20px #D0D0F0, -2px -2px 20px #F0D0D0;
+}
+
+.dvDevIcon {
+	height: 12px;
+	opacity: 0.3;
+}
+
+.dvDevIcon:hover {
+	opacity: 1.0;
+}
+
+.dvTimePopup {
+	padding:10px;
+	max-width: 420px;
+	overflow: hidden;
+}
+
+table.dvTimePopupHours {
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+}
+
+table.dvTimePopupMinutes {
+	width: 100%;
+	background: white;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+}
+
+table.dvTimePopupHours td,
+table.dvTimePopupMinutes td {
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	padding: 2px;
+	white-space: nowrap;
+	font-size: 12px;
+	text-align: center;
+	min-width: 30px;
+	max-width: 40px;
+}
+
+table.dvTimePopupHours td.dvTime:hover,
+table.dvTimePopupMinutes td.dvTime:hover {
+	background: #FFEEAA;
+}
+
+td.dvTimeSelected {
+	background: #202020;
+	color: white;
+}
+
+.dvTimePopupIcon {
+	padding: 2px;
+	padding-right: 5px;
+	height: 16px;
+	opacity: 0.6;
+}
+
+.dvTimePopupIcon:hover {
+	opacity: 1.0;
+}
+
+.dvWaitMessage {
+	padding: 20px;
+	color: #808080;
+}
+
+/* EOF */
